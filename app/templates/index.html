@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hello, {{ user.nickname }}!</h1>
+    {% for dest in destinations %}
+    <p>{{ dest.traveller.nickname }} </br>
+            {{ dest.line1 }}, {{ dest.line2 }}, </br>
+            {{ dest.city }}, </br>
+            {{ dest.zip }} </br>
+    </p>
+    {% endfor %}
+{% endblock %}
+
